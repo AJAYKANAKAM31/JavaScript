@@ -13,6 +13,9 @@ xhr.onload = function () {
             //     console.log(dummy[keys]);
             // }
             switch (keys) {
+                case 'flag':
+                    console.log(dummy['flag']);
+                    break;
                 case 'name':
                     console.log(dummy['name']);
                     break;
