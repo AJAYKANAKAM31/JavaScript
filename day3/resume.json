@@ -1,0 +1,43 @@
+{
+    "Basic": {
+        "first-Name": "Ajay",
+        "last-name": "Kanakam",
+        "mobile Number": "8686XXXXXX",
+        "DOB": "Dec 31 1995",
+        "email": "Ajay@gmail.com",
+        "Address": {
+            "H-No": "EWS-31",
+            "District": "Medchal",
+            "Mandal": "Qutubulapur",
+            "City": "Hyderabad",
+            "PinCode": 500055
+        },
+        "Skills": [
+            "Complex Problem Solving",
+            "Multitasking",
+            "Attention to detail",
+            "Decision making",
+            "Teamwork"
+        ],
+        "interests / Hobbies": [
+            "Badminton",
+            "cricket",
+            "Music"
+        ]
+    },
+    "Education": {
+        "Qualification": "B-tech in computer science",
+        "Secondary Education": "St Martin's High school",
+        "GPA": 7.5
+    },
+    "Languages": {
+        "lang1": "Telugu",
+        "lang2": "Hindi",
+        "Lang3": "English"
+    },
+    "CERTIFICATES": [
+        "Positive Impact Award (Kantar Global Award)",
+        "One Team Award (Kantar Global Award)",
+        "Partnership Award"
+    ]
+}
