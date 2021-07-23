@@ -1,0 +1,49 @@
+{
+    "Dimensions": {
+        "Overall Length - mm": 3500,
+        "Overall width - mm": 1600,
+        "Overall Height - mm": 1490,
+        "Wheelbase - mm": 2360,
+        "Track width": {
+            "front - mm": 1405,
+            "Rear - mm": 1400
+        },
+        "Minimum turning radius - m": 4.5,
+        "Minimum ground clearance - mm": 170
+    },
+    "Capacities": {
+        "Seating capacity - persons": 5,
+        "Fuel tank capacity - liters": 35
+    },
+    "engine": {
+        "Type": "KB-series",
+        "Number of cylinders": 3,
+        "Number of valves": 12,
+        "capacity - cc/c3": 998,
+        "Bore x Stroke - mm": "73.0 x 79.5",
+        "compression ratio": "10:1",
+        "Maximum power - ps/rpm": "67/6200",
+        "Maximum torque - Nm/rpm": "90/3500",
+        "Fuel distribution": "Multipoint injection"
+    },
+    "Transmission": {
+        "type": "5-Speed MT"
+    },
+    "Chassie": {
+        "Steering": "Rack & pinion, power assisted",
+        "brakes": {
+            "Front": "Ventilated discs",
+            "Rear": "Drums"
+        },
+        "Suspension": {
+            "Front": "MacPherson strut & coll spring",
+            "Rear": "Isolated trailing link & coil spring"
+        },
+        "Shock absorbers": "Gas Filles",
+        "Tyre {Tubeless}": "150/80R 13"
+    },
+    "Weights": {
+        "kerb weight {min, with full options} - kg": "860-880",
+        "Gross vehicle wight - Kg": 1320
+    }
+}
