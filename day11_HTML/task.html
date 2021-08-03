@@ -162,3 +162,136 @@
     </form>
   </body>
 </html>
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''' TASK 7 Creating template '''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 6</title>
+    <link rel="stylesheet" href="styles_test.css" />
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <h1>Yes! I want to subscribe to <em>Mag-O-Zine</em></h1>
+        <div id="names">
+          <div id="on1">
+            <input type="text" name="fname" /> <br />
+            <label for="fname">First Name</label><br />
+          </div>
+          <div id="tw1">
+            <input type="text" name="lname" /><br />
+            <label for="fname">Last Name</label><br />
+          </div>
+        </div>
+        <div id="inputBox">
+          <textarea name="address" id="" cols="50" rows="1"></textarea><br />
+          <label for="address">Address</label><br />
+        </div>
+        <div id="address">
+          <div>
+            <input type="text" name="city" /> <br />
+            <label for="city">city</label> <br />
+          </div>
+          <div>
+            <input type="text" name="State" /> <br />
+            <label for="State">State</label> <br />
+          </div>
+          <div>
+            <input type="text" name="ZIP" /> <br />
+            <label for="ZIP">ZIP</label> <br />
+          </div>
+        </div>
+
+        <div id="tailer1">
+          <label for="subscribe">Subscribe for: </label>
+          <input type="checkbox" name="subscribe" /> <b>1 year ($19.95)</b>
+          <input type="checkbox" name="subscribe" /> <b>2 year ($35.00)</b>
+          <br />
+        </div>
+        <div id="tailer2">
+          <label for="moreinfo">Send me more information about: </label> <br />
+          <input type="checkbox" name="moreinfo" /> <b>Computer-Zine</b> <br />
+          <input type="checkbox" name="moreinfo" /> <b>Fishing-Zine </b><br />
+          <input type="checkbox" name="moreinfo" /> <b>Cat-O-Zine </b> <br />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+''''''''''''''''''''''''
+'''''' CSS task 7 ''''''
+''''''''''''''''''''''''
+
+fieldset {
+  padding-left: 10px;
+}
+
+input,
+textarea {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  text-align: right;
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+label {
+  font-size: 20px;
+}
+
+h1 {
+  background-color: red;
+  color: white;
+  padding: 2px;
+  text-align: center;
+  width: 100%;
+}
+
+#names {
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#inputBox {
+  padding: 10px;
+}
+
+#tw1 {
+  margin-left: 20px;
+  width: 50%;
+}
+
+#address {
+  display: inline-flex;
+}
+
+#address div {
+  padding: 10px;
+}
+
+#tailer1 {
+  padding: 10px;
+}
+#tailer2 {
+  padding: 10px;
+}
+
+#tailer1 label,
+#tailer2 label {
+  font-weight: bold;
+}
+
+
+
