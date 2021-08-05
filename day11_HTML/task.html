@@ -47,25 +47,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact US</title>
+    <link rel="stylesheet" href="CSS_TASK3.css" />
   </head>
   <body>
-    <form action="">
-      <fieldset>
-        <legend>contact US</legend>
-        <label for="firstName">Your Name: </label>
-        <input type="text" name="firstName" /> <br />
-        <label for="lastName">Last Name: </label>
-        <input type="text" name="lastName" /> <br />
-        <label for="email">Email: </label>
-        <input type="email" /> <br />
-        <label for="additionalComm">Additional Comments</label>
-        <textarea name="additionalComm" cols="30" rows="10"></textarea> <br />
-        <input type="submit" value="SUBMIT" />
-        <input type="reset" value="CLEAR" /> <br />
-      </fieldset>
-    </form>
+    <div id="container">
+      <form action="">
+        <fieldset>
+          <h1>Contact us</h1>
+          <input type="text" name="firstName" placeholder="NAME" /><br />
+          <input type="email" placeholder="EMAIL" /> <br />
+          <textarea
+            name="additionalComm"
+            cols="50"
+            rows="10"
+            placeholder="MESSAGE"
+          ></textarea>
+          <br />
+          <input type="submit" value="SEND" />
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>
+
+'''''''''''' TASK3 CSS '''''''''''''
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(112, 209, 247),
+    rgb(81, 182, 212)
+  );
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#container {
+  width: 400px;
+  height: 350px;
+  align-content: center;
+  margin: auto;
+  margin-top: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2%;
+  border: none;
+  box-shadow: rgb(99, 101, 102);
+}
+
+fieldset {
+  border: none;
+  width: auto;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: rgb(99, 101, 102);
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  border: 1px solid rgb(207, 203, 203);
+  border-radius: 5%;
+}
+
+input[type="email"] {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  border: 1px solid rgb(207, 203, 203);
+  border-radius: 5%;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 60px;
+  border: 1px solid rgb(207, 203, 203);
+  border-radius: 5%;
+  resize: none;
+}
+
+input[type="submit"] {
+  position: relative;
+  height: 35px;
+  width: 70px;
+  border: none;
+  background-color: rgb(6, 109, 245);
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 10%;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 '''''''''''' TASK 4 working on LIST '''''''''''''''
