@@ -66,41 +66,41 @@ let obj = [
 
 const mainheader = document.createElement("h1");
 mainheader.innerHTML = "Countries and Details";
-document.body.appendChild(mainheader);
+document.body.append(mainheader);
 
 const startcont = document.createElement("div");
 startcont.setAttribute("id", "main-div");
-document.body.appendChild(startcont);
+document.body.append(startcont);
 
 function flagsFun(obj) {
   const container = document.createElement("div");
   container.setAttribute("class", "main-container");
-  startcont.appendChild(container);
+  startcont.append(container);
 
   const flag = document.createElement("img");
   flag.setAttribute("class", "img");
   flag.setAttribute("src", obj.img);
-  container.appendChild(flag);
+  container.append(flag);
 
   const country = document.createElement("div");
   country.setAttribute("id", "country");
-  container.appendChild(country);
+  container.append(country);
 
   const header = document.createElement("h3");
   header.innerHTML = obj.name;
-  country.appendChild(header);
+  country.append(header);
 
   const para1 = document.createElement("p");
   para1.innerHTML = `<b>Population: </b>` + obj.population;
-  country.appendChild(para1);
+  country.append(para1);
 
   const para2 = document.createElement("p");
   para2.innerHTML = `<b>Region: </b>` + obj.region;
-  country.appendChild(para2);
+  country.append(para2);
 
   const para3 = document.createElement("p");
   para3.innerHTML = `<b>Capital: </b>` + obj.capital;
-  country.appendChild(para3);
+  country.append(para3);
 }
 
 for (let i = 0; i < obj.length; i++) {
