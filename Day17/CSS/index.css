@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, rgb(236, 145, 103), rgb(243, 240, 76));
+}
+
+#container {
+  display: block;
+  flex-wrap: wrap;
+  width: auto;
+  position: relative;
+  left: 40%;
+  top: 50px;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+#text-content {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: black;
+  box-shadow: 15px 12px 20px rgb(95, 93, 93);
+  border-radius: 20px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.button-op {
+  width: 70px;
+  height: 40px;
+  align-content: center;
+  margin: 10px;
+  background: linear-gradient(orange, red);
+  box-shadow: 2px 2px 10px rgb(88, 87, 87);
+  position: relative;
+  top: 20%;
+  left: 100px;
+  border-radius: 10px;
+}
+
+.button-op:hover {
+  cursor: pointer;
+  background: linear-gradient(red, orange);
+}
