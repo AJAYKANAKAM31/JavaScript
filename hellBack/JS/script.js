@@ -18,7 +18,7 @@ setTimeout(() => {
                   document.getElementById("change").innerHTML = "1";
                   setTimeout(() => {
                     document.getElementById("change").innerHTML =
-                      "Happy NEW YEAR!!!";
+                      "Happy Independence Day!!!";
                   }, 1000);
                 }, 1000);
               }, 1000);
