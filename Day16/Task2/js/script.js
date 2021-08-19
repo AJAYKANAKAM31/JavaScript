@@ -89,6 +89,14 @@ var obj = [
 ];
 // console.log(obj[0].eventno);
 
+function popup() {
+  window.alert("No Tickets available");
+}
+
+function opennew() {
+  window.open("#", "_blank");
+}
+
 var block = document.createElement("div");
 block.id = "main-container";
 document.body.append(block);
@@ -114,9 +122,17 @@ for (let i = 0; i < obj.length; i++) {
 
   var content = document.createElement("div");
   content.className = "content";
-  content.innerHTML = `
+  if (i == 2 || i == 5 || i == 10) {
+    content.innerHTML = `
   <p>${obj[i].eventdate}</p>
   <p>${obj[i].seats}</p>
-  <button>${obj[i].available}</button>`;
-  imgblock.append(content);
+  <button class="soldout-option" onclick = "popup()">${obj[i].available}</button>`;
+    imgblock.append(content);
+  } else {
+    content.innerHTML = `
+    <p>${obj[i].eventdate}</p>
+    <p>${obj[i].seats}</p>
+    <button onclick="opennew()">${obj[i].available}</button>`;
+    imgblock.append(content);
+  }
 }
