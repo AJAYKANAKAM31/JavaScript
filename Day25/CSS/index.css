@@ -1,0 +1,39 @@
+.main-container {
+  width: 500px;
+  height: auto;
+  margin: 10px auto;
+  background-color: rgba(10, 10, 10, 0.041);
+}
+
+.users {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 9px;
+  box-shadow: 3px 3px 10px rgb(58, 57, 57);
+}
+
+.users:hover {
+  cursor: pointer;
+  background: tomato;
+  border: 1px solid black;
+}
+
+.image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+
+.image img {
+  width: auto;
+  height: auto;
+}
+
+.content {
+  font-family: sans-serif;
+}
