@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: grid;
+  width: 375px;
+  padding: 30px;
+  padding-bottom: 120px;
+  background: url("images/pattern-curve.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: contain;
+  grid-template-areas:
+    "first"
+    "second"
+    "third";
+}
+
+@media screen and (max-width: 1000px) {
+  .main-container {
+    grid-template-areas:
+      "second second first"
+      "third third first";
+  }
+}
+
+.first-block {
+  background: url("images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 80px;
+  grid-area: first;
+}
+
+.navigate {
+  width: 3.5rem;
+  background-color: rgb(255, 251, 251);
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 25px;
+  border-radius: 100rem;
+  margin: 0 auto;
+  position: relative;
+  bottom: 29px;
+}
+
+.navigate:hover {
+  cursor: pointer;
+}
+
+.second-block {
+  font-size: 32px;
+  background: url("images/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  grid-area: second;
+}
+
+#para1 {
+  color: rgb(90, 88, 88);
+}
+
+.third-block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 25px;
+  grid-area: third;
+}
+
+#name1 {
+  font-weight: bold;
+}
+
+#name2 {
+  color: rgb(148, 149, 150);
+}
