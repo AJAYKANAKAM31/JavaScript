@@ -43,6 +43,11 @@ body {
     justify-content: center;
     align-content: center;
   }
+
+  #firstblck p {
+    padding: 10px;
+    width: 100px;
+  }
 }
 
 .poke {
