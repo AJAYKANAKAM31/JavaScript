@@ -1,5 +1,8 @@
+// Default displaying 50 pokemons
 pokemon(50);
 var noofpoke;
+
+// Used to specify custom number of pokemons
 function showNoOfPoke() {
   noofpoke = document.getElementById("number").value;
   console.log(noofpoke);
@@ -16,30 +19,38 @@ function showNoOfPoke() {
   resetinput();
 }
 
+// On reset we need to have default 50 pokemons
 function defaultPoke() {
   contai.innerHTML = "";
   pokemon(50);
   resetinput();
 }
 
+// Reseting input once submit
 function resetinput() {
   document.getElementById("number").value = "";
 }
 
+// Creating main container
 var contai = document.createElement("div");
 contai.innerHTML = "";
 contai.className = "container";
 document.body.append(contai);
 
+// Fetching main API
 async function pokemon(x) {
   let pok_api = [];
-  pok_api = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${x}`);
+  try {
+    pok_api = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${x}`);
+  } catch (err) {
+    alert(err); // TypeError: failed to fetch
+  }
   const data = await pok_api.json();
   // console.log(data);
 
   let rslt_len = [];
   rslt_len = data["results"];
-  console.log(rslt_len);
+  // console.log(rslt_len);
   // indiv_pokemon(rslt_len[0]);
   for (let i = 0; i < rslt_len.length; i++) {
     const a = rslt_len[i];
@@ -47,6 +58,7 @@ async function pokemon(x) {
   }
 }
 
+// Taking individual pokemons data from the API
 async function indiv_pokemon(a) {
   var img;
   var abili_arr = [];
@@ -55,18 +67,22 @@ async function indiv_pokemon(a) {
   var char_toupper = char_name.toUpperCase();
   // console.log(char_name);
 
+  // Taking abilitiles from another URL
   const url = a.url;
   let data = [];
   data = await fetch(url);
   let data_json = [];
   data_json = await data.json();
   img = data_json["sprites"]["other"]["dream_world"]["front_default"];
-  console.log("AJ", data_json);
+  // console.log("AJ", data_json);
   // console.log("AJ", img);
 
+  // Used to add abilities to list
   abilities(data_json.abilities);
+  // Used to add moves to list
   moves_poke(data_json.moves);
 
+  // Creating HTML elements and giving JSON values
   var pokem_indi = document.createElement("div");
   pokem_indi.className = "poke";
   pokem_indi.innerHTML = `
